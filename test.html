@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>複数のチェックボタン表示</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="btn">
+      <div class="check-btn">
+        <button class="toggle-btn" data-target="checkContainer1">
+          チェックボタン1を表示/非表示
+        </button>
+        <div id="checkContainer1" class="hidden">
+          <input type="checkbox" id="myCheckBox1" />
+          <label for="myCheckBox1">チェックボックス1</label>
+        </div>
+      </div>
+      <div class="check-btn">
+        <button class="toggle-btn" data-target="checkContainer2">
+          チェックボタン2を表示/非表示
+        </button>
+        <div id="checkContainer2" class="hidden">
+          <input type="checkbox" id="myCheckBox2" />
+          <label for="myCheckBox2">チェックボックス2</label>
+        </div>
+      </div>
+      <div class="check-btn">
+        <button class="toggle-btn" data-target="checkContainer3">
+          チェックボタン3を表示/非表示
+        </button>
+        <div id="checkContainer3" class="hidden">
+          <div class="btn-flex">
+            <input type="checkbox" id="myCheckBox3" />
+            <label for="myCheckBox3">チェックボックス3</label>
+          </div>
+          <div class="btn-flex">
+            <input type="checkbox" id="myCheckBox4" />
+            <label for="myCheckBox4">チェックボックス4</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

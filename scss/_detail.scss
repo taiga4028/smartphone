@@ -1,0 +1,188 @@
+@use'mixin' as m;
+.detail {
+	display: flex;
+	min-height: 87vh;
+	width: 100%;
+	.navi {
+		background-color: rgb(0, 0, 0);
+		width: 250px;
+		.toggle-btn {
+			position: relative;
+			padding-left: 15px;
+			display: inline-block;
+			&::before{
+				position: absolute;
+				content: "";
+				top: 25%;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-color: transparent transparent transparent #ffffff;
+				border-width: 7px 0px 7px 12px;
+			}
+		}
+
+		.hidden {
+			display: none;
+		}
+		
+		.active {
+			display: block;
+		}
+		
+		div[id^="checkContainer"] {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.btn {
+			padding: 20px;
+			background-color: rgb(0, 0, 0);
+			width: 250px;
+			color: white;
+			@include m.sp {
+				width: 150px;
+			}
+			.toggle-btn {
+				color: white;
+
+			}
+		}
+
+		.search-box_title{
+			font-weight: bold;
+		}
+		.cat_image_all {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			max-width: 680px;
+			margin: 3em auto 0;
+		}
+		.cat_image {
+			width: 48%;
+			max-width: 320px;
+			margin: 0 0 2em;
+			a {
+				display: block;
+				color: #444;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.cat_image.is-hide {
+			display: none;
+		}
+	}
+	.contents {
+		padding-left: 25px;
+		display: flex;
+		width: 100%;
+		@include m.sp {
+			flex-direction: column;
+		}
+		.item {
+			// border: 1px solid red;
+			width: 50%;
+			padding: 30px;
+			@include m.sp {
+				width: 100%;
+				// height: ;
+			}
+			.phone {
+				img {
+					@include m.sp {
+						// height: 400px;
+						width: 100%;
+						object-fit: scale-down;
+					}
+				}
+			}
+			img {
+				display: block;
+				width: 80%;
+				margin: 20px auto;
+				@include m.sp {
+					// width: 100%;
+					// object-fit: cover;
+				}
+			}
+			.list {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 10px;
+				a {
+					border: 1px solid;
+					border-radius: 50px;
+					position: relative;
+					height: 50px;
+					width: 100%;
+					img {
+						position: absolute;
+						margin: 0;
+						top: 50%;
+  						left: 50%;
+  						transform: translate( -50% , -50%); 
+						width: 100px;
+						border-radius: 50px;
+						display: inline-block;
+						text-align: center;
+						// border: 1px solid red;
+					}
+				}
+				.au {
+					img {
+						width: 80px;
+					}
+				}
+				.softbank {
+					img {
+						width: 100px;
+						height: 38px;
+						object-fit: scale-down;
+					}
+				}
+				.rakuten {
+					img {
+						border-radius: 0;
+						width: 100px;
+						object-fit: scale-down;
+					}
+				}
+			}
+		}
+		.text {
+			width: 50%;
+			padding: 0 20px 0 30px;
+			@include m.sp {
+				width: 100%;
+			}
+			h2 {
+				text-align: left;
+				@include m.sp {
+					text-align: center;
+					width: 100%;
+				}
+			}
+			.list {
+				display: flex;
+				@include m.sp {
+					text-align: center;
+				}
+				.left {
+					width: 40%;
+					p {
+						padding: 10px 0;
+					}
+				}
+				.right {
+					width: 60%;
+					p {
+						padding: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}

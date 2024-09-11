@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smart</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/smartphone/index.html"><img src="img/smart_logo.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <div class="search">
+          <input type="text" placeholder="検索" />
+          <button type="button">検索</button>
+        </div>
+        <div class="sns">
+          <div class="x">
+            <p>X</p>
+            <a class="img" href="https://x.com/"
+              ><img src="img/x.logo.jpg" alt=""
+            /></a>
+          </div>
+          <div class="instagram">
+            <p>instagram</p>
+            <a class="img" href="https://www.instagram.com/"
+              ><img src="img/instagram.logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="detail">
+        <div class="navi">
+          <div class="btn">
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer1">
+                <span></span>キャリア
+              </button>
+              <div id="checkContainer1" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="docomo" />
+                  <label for="myCheckBox1">docomo</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="au" />
+                  <label for="myCheckBox1">au</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="SoftBank" />
+                  <label for="myCheckBox1">SoftBank</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="rakuten" />
+                  <label for="myCheckBox1">楽天モバイル</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer2">
+                <span></span>メーカー
+              </button>
+              <div id="checkContainer2" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="apple" />
+                  <label for="myCheckBox2">Apple</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="samsung" />
+                  <label for="myCheckBox2">Samsung</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="Xiaomi" />
+                  <label for="myCheckBox2">Xiaomi</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="oppo" />
+                  <label for="myCheckBox2">OPPO</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="motorola" />
+                  <label for="myCheckBox2">motorola</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="sharp" />
+                  <label for="myCheckBox2">Sharp</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="Sony" />
+                  <label for="myCheckBox2">Sony</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="other" />
+                  <label for="myCheckBox2">その他</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer3">
+                <span></span>発売日
+              </button>
+              <div id="checkContainer3" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="2024" />
+                  <label for="myCheckBox3">２０２４年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2023" />
+                  <label for="myCheckBox3">２０２３年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2022" />
+                  <label for="myCheckBox3">２０２２年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2021" />
+                  <label for="myCheckBox3">２０２１年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2020" />
+                  <label for="myCheckBox3">２０２０年以前</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer4">
+                <span></span>金額
+              </button>
+              <div id="checkContainer4" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="entry" />
+                  <label for="myCheckBox4">～３万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="middle" />
+                  <label for="myCheckBox4">３～７万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="middle-high" />
+                  <label for="myCheckBox4">７～１０万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="high" />
+                  <label for="myCheckBox4">１０～１５万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="super-high" />
+                  <label for="myCheckBox4">１５万円～</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="item">
+            <div class="phone">
+              <img src="img/Galaxy S24 Ultra.jpg" alt="" />
+            </div>
+            <div class="list">
+              <a class="docomo" href="https://www.docomo.ne.jp/product/sc52e/"
+                ><img src="img/docomo.logo.gif" alt=""
+              /></a>
+              <a
+                class="au"
+                href="https://www.au.com/mobile/product/smartphone/galaxy_s24_ultra/"
+                ><img src="img/au.logo.png" alt=""
+              /></a>
+              <!-- <a class="softbank" href=""
+                ><img src="img/softbank.logo.jpg" alt=""
+              /></a>
+              <a class="rakuten" href=""
+                ><img src="img/rakuten.logo.png" alt=""
+              /></a> -->
+            </div>
+          </div>
+          <div class="text">
+            <h2>タイトル</h2>
+            <div class="list">
+              <div class="left">
+                <p>カメラ</p>
+                <p>バッテリー</p>
+                <p>大きさ</p>
+                <p>ストレージ</p>
+                <p>メモリ</p>
+                <p>発売日</p>
+                <p>値段</p>
+              </div>
+              <div class="right">
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+                <p>テキストテキスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/script.js"></script>
+    </main>
+
+    <footer>
+      <div class="box">
+        <img src="img/smart_logo.png" alt="" />
+        <div class="contact">
+          <form action="#" method="post">
+            <div class="name">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="email">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="message">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">送信</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

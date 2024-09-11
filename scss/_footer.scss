@@ -1,0 +1,97 @@
+@use'mixin' as m;
+footer {
+    background-color: #D9D9D9;
+    .box {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+        // height: 440px;
+        @include m.sp {
+            flex-direction: column;
+        }
+        img {
+            border: 1px solid;
+            height: 100px;
+            width: 277px;
+            margin: auto 0;
+            @include m.sp {
+                margin: 30px auto 50px auto;
+            }
+        }
+
+        .contact {
+            width: 400px;
+            position:relative;
+            @include m.sp {
+                width: 100%;
+                margin: 0 auto;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            label {
+                margin: 8px 0;
+                font-size: 14px;
+                width: 25%;
+                text-align: right;
+                padding-right: 10px;
+                @include m.sp {
+                    max-width: 400px;
+                    text-align: left;
+                    // margin-left: 50px; 
+                }
+            }
+            
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 14px;
+                border: 1px solid #000000;
+                border-radius: 4px;
+                width: 75%;
+                background-color: white;
+                @include m.sp {
+                    width: 100%;
+                    // margin: 0 20px;
+                }
+            }
+            
+            textarea {
+                resize: vertical;
+                margin-bottom: 60px;
+            }
+            
+            button {
+                padding: 10px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 100px;
+                position:absolute;
+                bottom: 0;
+                right: 0;
+                @include m.sp {
+                    // right: 50px;
+                }
+            }  
+            .name,
+            .email,
+            .message {
+                display: flex;
+                @include m.sp {
+                    flex-direction: column;
+                }
+            }
+               
+        }
+    }
+}

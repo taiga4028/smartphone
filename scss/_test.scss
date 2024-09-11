@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+div[id^="checkContainer"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

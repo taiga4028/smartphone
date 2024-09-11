@@ -1,0 +1,102 @@
+@use'mixin' as m;
+header {
+    padding: 10px 30px 10px 10px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    justify-content: space-between;
+    // height: 80px;
+    // line-height: 80px;
+    // border: 1px solid;
+    .search {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 5px;
+        input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 14px;
+            width: 200px;
+        }
+        button {
+            background-color: #ccc;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+                background-color: #bbb;
+            }
+        }
+    }
+    
+    .close-btn {
+        background-color: black;
+        color: white;
+    }
+    
+    .logo {
+        margin: auto 0;
+        img {
+            width: 200px;
+            
+        }
+    }
+    .box {
+        display: flex; 
+        .search  {
+            margin: 22px 10px 22px 0;
+        }
+        .sns {
+            margin: auto 0;
+            .x {
+                // border: 1px solid;
+                display: flex;
+                margin-bottom: 3px;
+
+                p {
+                    margin: 5px 10px 0 10px;
+                    @include m.sp {
+                        display: none;
+                    }
+                }
+                a {
+                    // border: 1px solid;
+                    line-height: 0.5;
+                    img {
+                        width: 30px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .instagram {
+                // border: 1px solid;
+                display: flex;
+                margin-top: 3px;
+                p {
+                    margin: 5px 10px 0 10px;
+                    @include m.sp {
+                        display: none;
+                    }
+                }
+                a {
+                    // border: 1px solid;
+                    line-height: 0.5;
+                    img {
+                        width: 30px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

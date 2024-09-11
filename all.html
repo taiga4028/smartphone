@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smart</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/smartphone/index.html"
+          ><img src="img/smart_logo.png" alt=""
+        /></a>
+      </div>
+      <div class="box">
+        <div class="search">
+          <input type="text" placeholder="検索" />
+          <button type="button">検索</button>
+        </div>
+        <div class="sns">
+          <div class="x">
+            <p>X</p>
+            <a class="img" href="https://x.com/"
+              ><img src="img/x.logo.jpg" alt=""
+            /></a>
+          </div>
+          <div class="instagram">
+            <p>instagram</p>
+            <a class="img" href="https://www.instagram.com/"
+              ><img src="img/instagram.logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="detail">
+        <div class="navi">
+          <div class="btn">
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer1">
+                <span></span>キャリア
+              </button>
+              <div id="checkContainer1" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="docomo" />
+                  <label for="myCheckBox1">docomo</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="au" />
+                  <label for="myCheckBox1">au</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="SoftBank" />
+                  <label for="myCheckBox1">SoftBank</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="rakuten" />
+                  <label for="myCheckBox1">楽天モバイル</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer2">
+                <span></span>メーカー
+              </button>
+              <div id="checkContainer2" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="apple" />
+                  <label for="myCheckBox2">Apple</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="samsung" />
+                  <label for="myCheckBox2">Samsung</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="Xiaomi" />
+                  <label for="myCheckBox2">Xiaomi</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="oppo" />
+                  <label for="myCheckBox2">OPPO</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="motorola" />
+                  <label for="myCheckBox2">motorola</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="sharp" />
+                  <label for="myCheckBox2">Sharp</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="Sony" />
+                  <label for="myCheckBox2">Sony</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="other" />
+                  <label for="myCheckBox2">その他</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer3">
+                <span></span>発売日
+              </button>
+              <div id="checkContainer3" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="2024" />
+                  <label for="myCheckBox3">２０２４年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2023" />
+                  <label for="myCheckBox3">２０２３年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2022" />
+                  <label for="myCheckBox3">２０２２年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2021" />
+                  <label for="myCheckBox3">２０２１年</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="2020" />
+                  <label for="myCheckBox3">２０２０年以前</label>
+                </div>
+              </div>
+            </div>
+            <div class="check-btn">
+              <button class="toggle-btn" data-target="checkContainer4">
+                <span></span>金額
+              </button>
+              <div id="checkContainer4" class="hidden">
+                <div class="select">
+                  <input type="checkbox" id="entry" />
+                  <label for="myCheckBox4">～３万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="middle" />
+                  <label for="myCheckBox4">３～７万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="middle-high" />
+                  <label for="myCheckBox4">７～１０万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="high" />
+                  <label for="myCheckBox4">１０～１５万円</label>
+                </div>
+                <div class="select">
+                  <input type="checkbox" id="super-high" />
+                  <label for="myCheckBox4">１５万円～</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="smart-phone">
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="1"
+              data-img="img/Galaxy S24 Ultra.jpg"
+              data-text="Galaxy S24 Ultra<br>￥99.999-"
+            />
+            <a href="/smartphone/item.html">
+              <img src="img/Galaxy S24 Ultra.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="2"
+              data-img="img/Galaxy S24 Ultra.jpg"
+              data-text="Galaxy S24 Ultra<br>￥99.999-"
+            />
+            <a href="/smartphone/item.html">
+              <img src="img/Galaxy S24 Ultra.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="3"
+              data-img="img/Galaxy S24 Ultra.jpg"
+              data-text="Galaxy S24 Ultra<br>￥99.999-"
+            />
+            <a href="/smartphone/item.html">
+              <img src="img/Galaxy S24 Ultra.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="4"
+              data-img="img/Pixel 8a.jpg"
+              data-text="Pixel 8a<br>￥99.999-"
+            />
+            <a href="/smartphone/item2.html">
+              <img src="img/Pixel 8a.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="5"
+              data-img="img/Pixel 8a.jpg"
+              data-text="Pixel 8a<br>￥99.999-"
+            />
+            <a href="/smartphone/item2.html">
+              <img src="img/Pixel 8a.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="6"
+              data-img="img/Pixel 8a.jpg"
+              data-text="Pixel 8a<br>￥99.999-"
+            />
+            <a href="/smartphone/item2.html">
+              <img src="img/Pixel 8a.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="7"
+              data-img="img/iphone_15_pro_max.png"
+              data-text="iPhone 15 Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item3.html">
+              <img src="img/iphone_15_pro_max.png" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="8"
+              data-img="img/iphone_15_pro_max.png"
+              data-text="iPhone 15 Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item3.html">
+              <img src="img/iphone_15_pro_max.png" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="9"
+              data-img="img/iphone_15_pro_max.png"
+              data-text="iPhone 15 Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item3.html">
+              <img src="img/iphone_15_pro_max.png" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="10"
+              data-img="img/K0001572190.jpg"
+              data-text="Xiaomi 13T Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item4.html">
+              <img src="img/K0001572190.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="11"
+              data-img="img/K0001572190.jpg"
+              data-text="Xiaomi 13T Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item4.html">
+              <img src="img/K0001572190.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <div class="item">
+            <input
+              type="checkbox"
+              class="compare-checkbox"
+              data-id="12"
+              data-img="img/K0001572190.jpg"
+              data-text="Xiaomi 13T Pro<br>￥99.999-"
+            />
+            <a href="/smartphone/item4.html">
+              <img src="img/K0001572190.jpg" alt="" />
+              <p>テキスト<br />￥99.999-</p>
+            </a>
+          </div>
+          <button id="compare-btn">比較する</button>
+          <!-- <div id="comparison"></div> -->
+
+          <!-- ボタン部分
+          <div class="nav">
+            <ul>
+              <li class="nav__item" data-modal-link="modalA">modal A</li>
+              <li class="nav__item" data-modal-link="modalB">modal B</li>
+            </ul>
+          </div>
+          <!-- モーダル部分 -->
+          <!-- <div class="modal modalA">
+            <div class="modal__inner">
+              <div class="modal__bg"></div>
+              <div class="modal__cont">
+                <p class="modal__text">modal Aのモーダルです</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal modalB">
+            <div class="modal__inner">
+              <div class="modal__bg"></div>
+              <div class="modal__cont">
+                <p class="modal__text">modal Bのモーダルです</p>
+              </div>
+            </div> -->
+        </div>
+      </div>
+      <!-- モーダル -->
+      <div id="comparison-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+
+      <script src="js/script.js"></script>
+      <script src="js/modal.js"></script>
+      <script>
+        document
+          .getElementById("compare-btn")
+          .addEventListener("click", function () {
+            const selectedItems = [];
+            document
+              .querySelectorAll(".compare-checkbox:checked")
+              .forEach(function (checkbox) {
+                selectedItems.push(checkbox.getAttribute("data-id"));
+              });
+
+            // 選択された商品の詳細を表示（ここでAjaxや動的なデータ生成が可能）
+            const comparisonContainer = document.getElementById("comparison");
+            comparisonContainer.innerHTML =
+              "選択された商品: " + selectedItems.join(", ");
+          });
+      </script>
+      <script>
+        const modal = document.getElementById("comparison-modal");
+        const closeModal = document.getElementsByClassName("close")[0];
+        const compareBtn = document.getElementById("compare-btn");
+        const modalBody = document.getElementById("modal-body");
+
+        compareBtn.addEventListener("click", function () {
+          modalBody.innerHTML = ""; // 既存の内容をクリア
+
+          document
+            .querySelectorAll(".compare-checkbox:checked")
+            .forEach(function (checkbox) {
+              const img = checkbox.getAttribute("data-img");
+              const text = checkbox.getAttribute("data-text");
+
+              // 商品情報を追加
+              modalBody.innerHTML += `<div class="comparison-item">
+                                      <img src="${img}" alt="">
+                                      <p>${text}</p>
+                                    </div>`;
+            });
+
+          modal.style.display = "block"; // モーダルを表示
+        });
+
+        closeModal.onclick = function () {
+          modal.style.display = "none"; // モーダルを非表示
+        };
+
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+    </main>
+
+    <footer>
+      <div class="box">
+        <img src="img/smart_logo.png" alt="" />
+        <div class="contact">
+          <form action="#" method="post">
+            <div class="name">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="email">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="message">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">送信</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
