@@ -8,9 +8,6 @@ header {
     z-index: 999;
     background-color: white;
     justify-content: space-between;
-    // height: 80px;
-    // line-height: 80px;
-    // border: 1px solid;
     .search {
         display: flex;
         align-items: center;
@@ -52,14 +49,21 @@ header {
         }
     }
     .box {
-        display: flex; 
+        display: flex;
+        @include m.sp {
+            position: fixed;
+            z-index: 20;
+            top: 0;
+            left: -300px;
+            transition: all 0.5s;
+            opacity: 0;
+        }
         .search  {
             margin: 22px 10px 22px 0;
         }
         .sns {
             margin: auto 0;
             .x {
-                // border: 1px solid;
                 display: flex;
                 margin-bottom: 3px;
 
@@ -70,7 +74,6 @@ header {
                     }
                 }
                 a {
-                    // border: 1px solid;
                     line-height: 0.5;
                     img {
                         width: 30px;
@@ -79,7 +82,6 @@ header {
                 }
             }
             .instagram {
-                // border: 1px solid;
                 display: flex;
                 margin-top: 3px;
                 p {
@@ -89,7 +91,6 @@ header {
                     }
                 }
                 a {
-                    // border: 1px solid;
                     line-height: 0.5;
                     img {
                         width: 30px;
@@ -98,5 +99,146 @@ header {
                 }
             }
         }
+    }
+    .toggle {
+        width: 50px;
+        height: 50px;
+        position: relative; /*基準*/
+        /*   0.5秒かけて変化させる */
+        transition: all 0.5s;
+        cursor: pointer;
+        text-align: center;
+        display: none;
+        @include m.sp {
+            display: block;
+            margin-top: 10px;
+        }
+        span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            transition: all 0.5s;
+            display: block;
+            &:nth-child(1) {
+                top: 30%;
+            }
+            &:nth-child(2) {
+                top: 50%;
+            }
+            &:nth-child(3) {
+                top: 70%;
+            }
+        }
+    }
+    .hide {
+        display: none;
+        @include m.sp {
+            display: block;
+            position: fixed;
+            z-index: 50;
+            top: 30px;
+            left: -400px;
+            transition: all 0.5s;
+            opacity: 0;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .sns {
+             .x,
+            .instagram {
+                display: flex;
+                margin-bottom: 10px;
+                p {
+                    margin: 5px 10px 0 10px;
+                    color: white;
+                    font-size: 16px;
+                }
+                a {
+                    line-height: 0.5;
+                    img {
+                        width: 30px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.open {
+
+    .toggle {
+        color: white;
+        z-index: 40;
+        span {
+            background-color: white;
+            &:nth-child(1) {
+                transform: rotate(-45deg);
+                top: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(45deg);
+                top: 50%;
+            }
+        }
+    }
+    .hide {
+        // display: block;
+        // position: fixed;
+        // z-index: 50;
+        // top: 30px;
+        left: 30px;
+        opacity: 1;
+        // .search {
+        //     margin-bottom: 20px;
+        // }
+        // .sns {
+        //     .x,
+        //     .instagram {
+        //         display: flex;
+        //         margin-bottom: 10px;
+        //         p {
+        //             margin: 5px 10px 0 10px;
+        //             color: white;
+        //             font-size: 16px;
+        //         }
+        //         a {
+        //             line-height: 0.5;
+        //             img {
+        //                 width: 30px;
+        //                 border-radius: 10px;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+
+    .mask {
+        opacity: 1;
+        display: block;
+        position: fixed;
+        
+
+    }
+    
+
+}
+.mask {
+    display: none;
+    @include m.sp {
+        position: fixed;
+        // z-index: 30;
+        opacity: 0;
+        transition: all 0.5s;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(103, 103, 103, 0.7);
     }
 }
