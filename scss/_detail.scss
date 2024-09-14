@@ -134,9 +134,12 @@
 				}
 				.au {
 					img {
-						width: 50%;
+						width: 80%;
+						height:90%;
+						object-fit: scale-down;
 						z-index: -1;
-
+						border-radius: 0px;
+						// border: 1px solid;
 					}
 				}
 				.softbank {

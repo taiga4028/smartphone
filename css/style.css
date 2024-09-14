@@ -624,8 +624,12 @@ footer .box .contact .message {
   text-align: center;
 }
 .detail .contents .item .list .au img {
-  width: 50%;
+  width: 80%;
+  height: 90%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   z-index: -1;
+  border-radius: 0px;
 }
 .detail .contents .item .list .softbank img {
   width: 80%;
