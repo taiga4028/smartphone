@@ -617,25 +617,29 @@ footer .box .contact .message {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
+  width: 90%;
+  z-index: -1;
   border-radius: 50px;
   display: inline-block;
   text-align: center;
 }
 .detail .contents .item .list .au img {
-  width: 80px;
+  width: 50%;
+  z-index: -1;
 }
 .detail .contents .item .list .softbank img {
-  width: 100px;
-  height: 38px;
+  width: 80%;
+  height: 70px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  z-index: -1;
 }
 .detail .contents .item .list .rakuten img {
   border-radius: 0;
-  width: 100px;
+  width: 90%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  z-index: -1;
 }
 .detail .contents .text {
   width: 50%;
